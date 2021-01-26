@@ -119,7 +119,7 @@ def user_info():
 
     registered = r.json()['user'].get('registered').get('#text')
 
-    user_info = {
+    user_information = {
         # Run the queries
         "avatar": r.json()['user']['image'][2].get('#text'),
         "realname": r.json()['user'].get('realname'),
@@ -129,7 +129,7 @@ def user_info():
         "url": r.json()['user'].get('url')
     }
 
-    return render_template("/user_info.html", user_info=user_info, username=username)
+    return render_template("/user_info.html", user_information=user_information, username=username)
 
 
 # recently Played Tracks

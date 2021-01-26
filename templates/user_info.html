@@ -6,30 +6,30 @@
 
 {% block main %}
     <br><h2>User Info</h2>
-    <img class = "avatar_big" src=" {{ user_info.get('avatar') }} "><br>
+    <img class = "avatar_big" src=" {{ user_information.get('avatar') }} "><br>
     <h2 class="forceredtext">{{ session["lastfmusername"] }}</h2><br><br>
 
     <table class="table borderless table-striped table_small center">
         <tr class="c-flex">
             <td class="col-2"><h5>Real Name:</h4><td>
-            <td class="col-4">{{ user_info.get('realname') }}</p></td>
+            <td class="col-4">{{ user_information.get('realname') }}</p></td>
         </tr>
         <tr>
             <td><h5>Country:</h4><td>
-            <td><p>{{ user_info.get('country') }}</p></td>
+            <td><p>{{ user_information.get('country') }}</p></td>
         </tr>
 
         <tr>
             <td><h5>Total Scrobbles:</h4><td>
-            <td><p>{{ user_info.get('playcount') }} scrobbles</p></td>
+            <td><p>{{ user_information.get('playcount') }} scrobbles</p></td>
         </tr>
         <tr>
             <td><h5>Registered on:</h4><td>
-            <td><p>{{ user_info.get('registration_date') }}</p></td>
+            <td><p>{{ user_information.get('registration_date') }}</p></td>
         </tr>
         <tr>
             <td><h5>Last.fm profile:</h4><td>
-            <td><p><a href="{{ user_info.get('url') }}">{{ user_info.get('url') }}</a></p></td>
+            <td><p><a href="{{ user_information.get('url') }}">{{ user_information.get('url') }}</a></p></td>
         </tr>
 
     </table>
