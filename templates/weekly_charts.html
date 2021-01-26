@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Weekly Top Artists
+{% endblock %}
+
+{% block main %}
+    <br><h2>Weekly Charts by</h2>
+    <div>
+        <img class="avatar" src="{{avatar}}">
+    </div>
+    <h2 class="forceredtext">{{ session["lastfmusername"] }}</h2><br>
+    <h2>Weekly Top Tracks</h2>
+    <table class="table table-striped borderless">
+        <tr>
+            <thead class="theadhighlight">
+                <td></td>
+                <td>Track</td>
+                <td>Artist</td>
+                <td>Scrobbles</td>
+            </thead>
+        </tr>
+
+            {% set p = namespace(value=1) %}
+            {% set n = namespace(value=0) %}
+            {% for i in range(10) %}
+        <tr>
+            <td>{{ p.value }}</td>
+            <td>{{ weekly_tracks_track[n.value] }}</td>
+            <td>{{ weekly_tracks_artist[n.value] }}</td>
+            <td>{{ weekly_tracks_playcount[n.value] }} scrobbles</td>
+        </tr>
+                {% set p.value = p.value + 1 %}
+                {% set n.value = n.value + 1 %}
+            {% endfor %}
+
+    </table><br>
+
+    <h2>Weekly Top Artists</h2>
+    <table class="table table-striped borderless">
+        <tr>
+            <thead class="theadhighlight">
+                <td></td>
+                <td>Artist</td>
+                <td>Scrobbles</td>
+            </thead>
+        </tr>
+
+        {% set p = namespace(value=1) %}
+            {% set n = namespace(value=0) %}
+            {% for i in range(10) %}
+        <tr>
+            <td>{{ p.value }}</td>
+            <td>{{ weekly_artists_artist[n.value] }}</td>
+            <td>{{ weekly_artists_playcount[n.value] }}</td>
+        </tr>
+                {% set p.value = p.value + 1 %}
+                {% set n.value = n.value + 1 %}
+            {% endfor %}
+    </table><br>
+
+
+    <h2>Weekly Top Albums</h2>
+    <table class="table table-striped borderless">
+        <tr>
+            <thead class="theadhighlight">
+                <td></td>
+                <td>Album</td>
+                <td>Artist</td>
+                <td>Scrobbles</td>
+            </thead>
+        </tr>
+
+        {% set p = namespace(value=1) %}
+            {% set n = namespace(value=0) %}
+            {% for i in range(10) %}
+        <tr>
+            <td>{{ p.value }}</td>
+            <td>{{ weekly_albums_album[n.value] }}</td>
+            <td>{{ weekly_albums_artist[n.value] }}</td>
+            <td>{{ weekly_albums_playcount[n.value] }}</td>
+        </tr>
+                {% set p.value = p.value + 1 %}
+                {% set n.value = n.value + 1 %}
+            {% endfor %}
+
+
+    </table>
+
+{% endblock %}

@@ -1,0 +1,74 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Recently Played Tracks
+{% endblock %}
+
+{% block main %}
+    <br><h2>Recently Played Tracks by</h2>
+    <div>
+        <img class="avatar" src="{{avatar}}">
+    </div>
+    <h2 class="forceredtext">{{ session["lastfmusername"] }}</h2><br>
+    <table class="table borderless table-striped">
+        <tr>
+            <thead class="theadhighlight">
+                <td class="col-7"></td>
+                <td class="col-5">Artist</td>
+                <td class="col-5">Track</td>
+                <!--<td>Scrobbed at</td>-->
+            </thead>
+        </tr>
+        <tr>
+            <td><img class="imgthumbnail" src="{{recent_played_tracks_cover[0]}}"></td>
+            <td>{{ recent_played_tracks_artist[0] }}</td>
+            <td>{{ recent_played_tracks_track[0] }}</td>
+        </tr>
+         <tr>
+            <td><img class="imgthumbnail" src="{{recent_played_tracks_cover[1]}}"></td>
+            <td>{{ recent_played_tracks_artist[1] }}</td>
+            <td>{{ recent_played_tracks_track[1] }}</td>
+        </tr>
+        <tr>
+            <td><img class="imgthumbnail" src="{{recent_played_tracks_cover[2]}}"></td>
+            <td>{{ recent_played_tracks_artist[2] }}</td>
+            <td>{{ recent_played_tracks_track[2] }}</td>
+        </tr>
+        <tr>
+            <td><img class="imgthumbnail" src="{{recent_played_tracks_cover[3]}}"></td>
+            <td>{{ recent_played_tracks_artist[3] }}</td>
+            <td>{{ recent_played_tracks_track[3] }}</td>
+        </tr>
+        <tr>
+            <td><img class="imgthumbnail" src="{{recent_played_tracks_cover[4]}}"></td>
+            <td>{{ recent_played_tracks_artist[4] }}</td>
+            <td>{{ recent_played_tracks_track[4] }}</td>
+        </tr>
+        <tr>
+            <td><img class="imgthumbnail" src="{{recent_played_tracks_cover[5]}}"></td>
+            <td>{{ recent_played_tracks_artist[5] }}</td>
+            <td>{{ recent_played_tracks_track[5] }}</td>
+        </tr>
+        <tr>
+            <td><img class="imgthumbnail" src="{{recent_played_tracks_cover[6]}}"></td>
+            <td>{{ recent_played_tracks_artist[6] }}</td>
+            <td>{{ recent_played_tracks_track[6] }}</td>
+        </tr>
+        <tr>
+            <td><img class="imgthumbnail" src="{{recent_played_tracks_cover[7]}}"></td>
+            <td>{{ recent_played_tracks_artist[7] }}</td>
+            <td>{{ recent_played_tracks_track[7] }}</td>
+        </tr>
+        <tr>
+            <td><img class="imgthumbnail" src="{{recent_played_tracks_cover[8]}}"></td>
+            <td>{{ recent_played_tracks_artist[8] }}</td>
+            <td>{{ recent_played_tracks_track[8] }}</td>
+        </tr>
+        <tr>
+            <td><img class="imgthumbnail" src="{{recent_played_tracks_cover[9]}}"></td>
+            <td>{{ recent_played_tracks_artist[9] }}</td>
+            <td>{{ recent_played_tracks_track[9] }}</td>
+        </tr>
+    </table>
+
+{% endblock %}

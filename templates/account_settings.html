@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Your Account Settings
+{% endblock %}
+
+{% block main %}
+    <br><br><h2>Your Account Settings</h2><br>
+
+    <table class="table borderless table-striped table_small center">
+        <form action="/account_settings" method="post">
+            <tr class="c-flex">
+                <td class="col-1"><h5>Radio-Friendly Username:</h5></td>
+                <td class="col-2"><p>{{ session["username"] }}</p></td>
+                <td class="col-5"></td>
+            </tr>
+            <tr class="c-flex">
+                <td class="col-1"><h5>ID:</h5></td>
+                <td class="col-2"><p>{{ session["user_id"] }}</p></td>
+                <td class="col-5"></td>
+            </tr>
+            <tr>
+                <td class="col-1"><h5>E-mail:</h5></td>
+                <td class="col-2"><p>{{ session["email"] }}</p></td>
+                <td class="col-6"><button type="submit" name="option" value="change_email" class="btn btn-dark">Change</button></td>
+            </tr>
+
+            <tr>
+                <td class="col-1"><h5>Password:</h5></td>
+                <td class="col-2"><p>*********</p></td>
+                <td class="col-6"><button type="submit" name="option" value="change_password" class="btn btn-dark">Change</button></td>
+            </tr>
+            <tr>
+                <td class="col-1"><h5>Last.fm Username:</h5></td>
+                <td class="col-2"><p>{{ session["userlastfmusername"] }}</p></td>
+                <td class="col-6"><button type="submit" name="option" value="change_lastfmusername" class="btn btn-dark">Change</button></td>
+            </tr>
+            <tr>
+                <td class="col-1"><h5>Registered on:</h5></td>
+                <td class="col-2"><p>{{ session["registered"] }}</p></td>
+                <td></td>
+            </tr>
+        </form>
+    </table>
+
+
+{% endblock %}

@@ -1,0 +1,238 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    All TimeTop Albums
+{% endblock %}
+
+{% block main %}
+    <br><h2>All Time Top Albums by</h2>
+    <div>
+        <img class="avatar" src="{{avatar}}">
+    </div>
+    <h2 class="forceredtext">{{ session["lastfmusername"] }}</h2><br>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm box imggrid">
+          <img class="imggrid img_thumbnail" src="{{all_time_top_albums_cover[0]}}">
+          <div class="bottomleft">
+              <span class="text1 inverted">{{ all_time_top_albums_name[0] }}</span><br>
+              <span class="inverted">by {{ all_time_top_albums_artist[0] }}<br>
+              {{ all_time_top_albums_playcount[0] }} scrobbles</span>
+          </div>
+        </div>
+
+        <div class="col-sm box imggrid">
+          <img class="imggrid img_thumbnail" src="{{all_time_top_albums_cover[1]}}">
+          <div class="bottomleft">
+              <span class="text1">{{ all_time_top_albums_name[1] }}</span><br>
+              by {{ all_time_top_albums_artist[1] }}<br>
+              {{ all_time_top_albums_playcount[1] }} scrobbles
+          </div>
+        </div>
+
+        <div class="col-sm box imggrid">
+          <img class="imggrid img_thumbnail" src="{{all_time_top_albums_cover[2]}}">
+          <div class="bottomleft">
+              <span class="text1">{{ all_time_top_albums_name[2] }}</span><br>
+              by {{ all_time_top_albums_artist[2] }}<br>
+              {{ all_time_top_albums_playcount[2] }} scrobbles
+          </div>
+        </div>
+      </div><br>
+
+
+
+
+      <div class="row">
+
+        <div class="col-sm box imggrid">
+          <img class="imggrid img_thumbnail" src="{{all_time_top_albums_cover[3]}}">
+          <div class="bottomleft">
+              <span class="text1">{{ all_time_top_albums_name[3] }}</span><br>
+              by {{ all_time_top_albums_artist[3] }}<br>
+              {{ all_time_top_albums_playcount[3] }} scrobbles
+          </div>
+        </div>
+
+        <div class="col-sm box imggrid">
+          <img class="imggrid img_thumbnail" src="{{all_time_top_albums_cover[4]}}">
+          <div class="bottomleft">
+              <span class="text1">{{ all_time_top_albums_name[4] }}</span><br>
+              by {{ all_time_top_albums_artist[4] }}<br>
+              {{ all_time_top_albums_playcount[4] }} scrobbles
+          </div>
+        </div>
+
+        <div class="col-sm box imggrid">
+          <img class="imggrid img_thumbnail" src="{{all_time_top_albums_cover[5]}}">
+          <div class="bottomleft">
+              <span class="text1">{{ all_time_top_albums_name[5] }}</span><br>
+              by {{ all_time_top_albums_artist[5] }}<br>
+              {{ all_time_top_albums_playcount[5] }} scrobbles
+          </div>
+        </div>
+      </div><br>
+
+
+      <div class="row">
+
+        <div class="col-sm box imggrid">
+          <img class="imggrid img_thumbnail" src="{{all_time_top_albums_cover[6]}}">
+          <div class="bottomleft">
+              <span class="text1">{{ all_time_top_albums_name[6] }}</span><br>
+              by {{ all_time_top_albums_artist[6] }}<br>
+              {{ all_time_top_albums_playcount[6] }} scrobbles
+          </div>
+        </div>
+
+        <div class="col-sm box imggrid">
+          <img class="imggrid img_thumbnail" src="{{all_time_top_albums_cover[7]}}">
+          <div class="bottomleft">
+              <span class="text1">{{ all_time_top_albums_name[7] }}</span><br>
+              by {{ all_time_top_albums_artist[7] }}<br>
+              {{ all_time_top_albums_playcount[7] }} scrobbles
+          </div>
+        </div>
+
+        <div class="col-sm box imggrid">
+          <img class="imggrid img_thumbnail" src="{{all_time_top_albums_cover[8]}}">
+          <div class="bottomleft">
+              <span class="text1">{{ all_time_top_albums_name[8] }}</span><br>
+              by {{ all_time_top_albums_artist[8] }}<br>
+              {{ all_time_top_albums_playcount[8] }} scrobbles
+          </div>
+        </div>
+      </div><br>
+
+
+
+      <div class="row">
+
+        <div class="col-sm box imggrid">
+          <img class="imggrid img_thumbnail" src="{{all_time_top_albums_cover[9]}}">
+          <div class="bottomleft">
+              <span class="text1">{{ all_time_top_albums_name[9] }}</span><br>
+              by {{ all_time_top_albums_artist[9] }}<br>
+              {{ all_time_top_albums_playcount[9] }} scrobbles
+          </div>
+        </div>
+
+        <div class="col-sm box imggrid">
+          <img class="imggrid img_thumbnail" src="{{all_time_top_albums_cover[10]}}">
+          <div class="bottomleft">
+              <span class="text1">{{ all_time_top_albums_name[10] }}</span><br>
+              by {{ all_time_top_albums_artist[10] }}<br>
+              {{ all_time_top_albums_playcount[10] }} scrobbles
+          </div>
+        </div>
+
+        <div class="col-sm box imggrid">
+          <img class="imggrid img_thumbnail" src="{{all_time_top_albums_cover[11]}}">
+          <div class="bottomleft">
+              <span class="text1">{{ all_time_top_albums_name[11] }}</span><br>
+              by {{ all_time_top_albums_artist[11] }}<br>
+              {{ all_time_top_albums_playcount[11] }} scrobbles
+          </div>
+        </div>
+      </div><br>
+
+
+
+      <div class="row">
+
+        <div class="col-sm box imggrid">
+          <img class="imggrid img_thumbnail" src="{{all_time_top_albums_cover[12]}}">
+          <div class="bottomleft">
+              <span class="text1">{{ all_time_top_albums_name[12] }}</span><br>
+              by {{ all_time_top_albums_artist[12] }}<br>
+              {{ all_time_top_albums_playcount[12] }} scrobbles
+          </div>
+        </div>
+
+        <div class="col-sm box imggrid">
+          <img class="imggrid img_thumbnail" src="{{all_time_top_albums_cover[13]}}">
+          <div class="bottomleft">
+              <span class="text1">{{ all_time_top_albums_name[13] }}</span><br>
+              by {{ all_time_top_albums_artist[13] }}<br>
+              {{ all_time_top_albums_playcount[13] }} scrobbles
+          </div>
+        </div>
+
+        <div class="col-sm box imggrid">
+          <img class="imggrid img_thumbnail" src="{{all_time_top_albums_cover[14]}}">
+          <div class="bottomleft">
+              <span class="text1">{{ all_time_top_albums_name[14] }}</span><br>
+              by {{ all_time_top_albums_artist[14] }}<br>
+              {{ all_time_top_albums_playcount[14] }} scrobbles
+          </div>
+        </div>
+      </div><br>
+
+
+
+      <div class="row">
+
+        <div class="col-sm box imggrid">
+          <img class="imggrid img_thumbnail" src="{{all_time_top_albums_cover[15]}}">
+          <div class="bottomleft">
+              <span class="text1">{{ all_time_top_albums_name[15] }}</span><br>
+              by {{ all_time_top_albums_artist[15] }}<br>
+              {{ all_time_top_albums_playcount[15] }} scrobbles
+          </div>
+        </div>
+
+        <div class="col-sm box imggrid">
+          <img class="imggrid img_thumbnail" src="{{all_time_top_albums_cover[16]}}">
+          <div class="bottomleft">
+              <span class="text1">{{ all_time_top_albums_name[16] }}</span><br>
+              by {{ all_time_top_albums_artist[16] }}<br>
+              {{ all_time_top_albums_playcount[16] }} scrobbles
+          </div>
+        </div>
+
+        <div class="col-sm box imggrid">
+          <img class="imggrid img_thumbnail" src="{{all_time_top_albums_cover[17]}}">
+          <div class="bottomleft">
+              <span class="text1">{{ all_time_top_albums_name[17] }}</span><br>
+              by {{ all_time_top_albums_artist[17] }}<br>
+              {{ all_time_top_albums_playcount[17] }} scrobbles
+          </div>
+        </div>
+      </div><br>
+
+
+
+      <div class="row">
+
+        <div class="col-sm box imggrid">
+          <img class="imggrid img_thumbnail" src="{{all_time_top_albums_cover[18]}}">
+          <div class="bottomleft">
+              <span class="text1">{{ all_time_top_albums_name[18] }}</span><br>
+              by {{ all_time_top_albums_artist[18] }}<br>
+              {{ all_time_top_albums_playcount[18] }} scrobbles
+          </div>
+        </div>
+
+        <div class="col-sm box imggrid">
+          <img class="imggrid img_thumbnail" src="{{all_time_top_albums_cover[19]}}">
+          <div class="bottomleft">
+              <span class="text1">{{ all_time_top_albums_name[19] }}</span><br>
+              by {{ all_time_top_albums_artist[19] }}<br>
+              {{ all_time_top_albums_playcount[19] }} scrobbles
+          </div>
+        </div>
+
+        <div class="col-sm box imggrid">
+          <img class="imggrid img_thumbnail" src="{{all_time_top_albums_cover[20]}}">
+          <div class="bottomleft">
+              <span class="text1">{{ all_time_top_albums_name[20] }}</span><br>
+              by {{ all_time_top_albums_artist[20] }}<br>
+              {{ all_time_top_albums_playcount[20] }} scrobbles
+          </div>
+        </div>
+      </div><br>
+
+    </div>
+{% endblock %}

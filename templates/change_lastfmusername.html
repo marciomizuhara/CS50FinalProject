@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Change Your Last.fm Username
+{% endblock %}
+
+{% block main %}
+    <br><br><h2>Change Your Last.fm Username</h2><br>
+
+    <form action="/change_lastfmusername" method="post">
+        <div class="form-group">
+            <input class="form-control" name="newuserlastfmusername" placeholder="New Last.fm Username" type="text">
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="confirmation" placeholder="Confirmation" type="text">
+        </div>
+        <button class="btn btn-dark" type="button" onclick="location.href='/account_settings'">Cancel</button>
+        <button class="btn btn-dark" type="submit">Save Settings</button>
+    </form>
+{% endblock %}
+

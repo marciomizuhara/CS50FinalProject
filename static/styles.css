@@ -1,0 +1,355 @@
+body {
+    background-color: #333333;
+
+}
+
+
+.navbar-toggler-icon
+{
+    background-color: #404040;
+}
+
+
+a {
+    text-decoration: none;
+    color: #e6e6e6;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #e6e6e6;
+}
+
+a:hover {
+    text-decoration: none;
+    color: gray;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #e6e6e6;
+}
+
+p {
+  color: #e6e6e6;
+}
+
+.alert {
+    background-color: #333333;
+    color: #e6e6e6;
+    border-color: red;
+}
+
+
+.flashed {
+    position: absolute;
+    width: 100%;
+}
+
+
+.forceredtext {
+    color: #e6e6e6
+}
+
+.btn-dark:hover
+{
+    border-color: red;
+}
+
+
+.navbar
+{
+    background-color: #262626;
+}
+
+
+.navbar-nav > li > .dropdown-menu {
+    color: #e6e6e6;
+    background-color: #262626;
+
+}
+
+
+.imgthumbnail
+{
+    display: inline-block;
+    width: 40px;
+    height: auto;
+    word-wrap: break-word;
+}
+
+.imggrid
+{
+    width: 95%;
+    height: auto;
+    word-wrap: break-word;
+}
+
+.imggrid :hover
+{
+    width: 95%;
+    height: auto;
+}
+
+
+.col-sm box
+{
+  word-wrap: break-word;
+}
+
+
+input[type=radio]
+{
+    display:none;
+
+}
+
+.img_thumbnail
+{
+  border: 1px solid #ddd; /* Gray border */
+  border-radius: 4px;  /* Rounded border */
+  padding: 5px; /* Some padding */
+
+}
+
+
+.bottomleft
+{
+  position: absolute;
+  bottom: 8px;
+  left: 40px;
+  text-align: left;
+  font-size: 16px;
+  color: white;
+  text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
+  line-height: 1.3;
+  word-wrap: break-word;
+
+}
+
+.text1
+{
+  font-weight: bold;
+  font-size: 18px;
+
+}
+
+.btn:focus
+{
+    border-color: red;
+}
+
+
+.index {
+    background-color: #1a1a1a;
+    padding: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 15px;
+    width: 60%;
+    text-align: center;
+}
+
+.formlightgray {
+    background-color: #f2f2f2;
+}
+
+
+
+
+
+.altlink
+{
+  text-decoration: none;
+  color: lightgray;
+}
+
+.altlink:visited {
+  text-decoration: none;
+  color: gray;
+}
+
+
+.avatar
+{
+    display: inline-block;
+    width: 100px;
+    height: auto;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+
+.avatar_big
+{
+    display: inline-block;
+    width: 180px;
+    height: auto;
+    padding: 5px;
+    border-radius: 50%;
+
+}
+
+.borderless td, .borderless th {
+    border: none;
+}
+
+
+.btn-outline-danger {
+    color: #e6e6e6 ;
+}
+
+.col-1 {
+    width: 200%;
+    border: 0px;
+    border-style: none;
+}
+
+.col-3 {
+    text-align: center;
+    border: 0px;
+    border-style: none;
+}
+
+.col-5 {
+    width: 50%;
+    text-align: left;
+    border: 0px;
+    border-style: none;
+}
+
+.col-6 {
+    width: 50%;
+    text-align: left;
+    border: 0px;
+    border-style: none;
+}
+
+.col-7 {
+    width: 20%;
+    text-align: left;
+    border: 0px;
+    border-style: none;
+}
+
+
+.theadhighlight
+{
+  font-size: 16px;
+  color: white;
+  background-color: #1a1a1a;
+  border: 0px;
+  border-style: none;
+}
+
+nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+}
+
+/* colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+main .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main
+{
+    /* scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* center contents */
+    text-align: center;
+}
+
+main img
+{
+    /* constrain images on small screens */
+    max-width: 100%;
+}
+
+main table {
+    text-align: left;
+    border: 0px;
+    border-style: none;
+}
+
+main tfoot {
+    font-weight: bold;
+    border: 0px;
+    border-style: none;
+}
+
+.forcebold {
+    font-weight: bold;
+}
+
+.forcered
+{
+    color: red;
+}
+
+.force-vertical-center
+{
+    vertical-align: center;
+}
+
+
+table {
+    border: 0px;
+    border-style: none;
+}
+
+td {
+    color: #e6e6e6;
+}
+
+
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: #262626;
+    border: 0px;
+    border-style: none;
+
+
+}
+
+.table_small {
+    table-layout: fixed;
+    width: 70%;
+    border: 0px;
+    border-style: none;
+
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.li-spaced {
+    margin: 0 15px 0 0;
+}
+
+

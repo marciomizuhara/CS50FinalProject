@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Change Your E-mail
+{% endblock %}
+
+{% block main %}
+    <br><br><h2>Change Your E-mail</h2><br>
+
+    <form action="/change_email" method="post">
+        <div class="form-group">
+            <input class="form-control" name="newemail" placeholder="New E-mail" type="text">
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="confirmation" placeholder="Confirmation" type="text">
+        </div>
+        <button class="btn btn-dark" type="button" onclick="location.href='/account_settings'">Cancel</button>
+        <button class="btn btn-dark" type="submit">Save Settings</button>
+    </form>
+{% endblock %}
+

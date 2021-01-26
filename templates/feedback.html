@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Feedback
+{% endblock %}
+
+{% block main %}
+    <br><br><h2><span class="forceredtext">Leave a Feedback!</span></h2><br>
+
+    <form action="/feedback" method="post">
+        <div class="mb-3">
+          <textarea class="form-control w-75 formlightgray" id="exampleFormControlTextarea1" name="name" placeholder="Your Name" rows="1"></textarea>
+        </div>
+
+        <div class="mb-3">
+          <textarea class="form-control w-75 formlightgray" id="exampleFormControlTextarea1" name="email" placeholder="Your Email" rows="1"></textarea>
+        </div>
+
+        <div class="mb-3">
+          <textarea class="form-control w-75 formlightgray" id="exampleFormControlTextarea1" name="feedback" placeholder="Your Feedback" rows="10"></textarea>
+        </div>
+        <button class="btn btn-dark" type="submit">Submit</button>
+    </form>
+
+
+{% endblock %}

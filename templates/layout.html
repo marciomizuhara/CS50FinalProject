@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- documentation at http://getbootstrap.com/docs/4.1/, alternative themes at https://bootswatch.com/ -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- https://favicon.io/emoji-favicons/money-mouth-face/ -->
+        <link href="/static/favicon.ico" rel="icon">
+
+        <link href="/static/styles.css" rel="stylesheet">
+
+        <script src="/static/script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+        <title>Radio-Friendly: {% block title %}{% endblock %}</title>
+
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-md" >
+            <a class="navbar-brand" href="/"><span class="red">Radio-Friendly</span></a>
+            <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbar" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse center" id="navbar">
+                {% if session.user_id %}
+                    <ul class="navbar-nav mr-auto mt-2">
+                        <li class="nav-item li-spaced"><a class="nav-link" href="/">Run a Query</a></li>
+                        <li class="nav-item li-spaced"><a class="nav-link" href="/user_info">User Info</a></li>
+                        <li class="nav-item li-spaced"><a class="nav-link" href="/recently_played_tracks">Recently Played Tracks</a></li>
+                        <li class="nav-item li-spaced"><a class="nav-link" href="/weekly_charts">Weekly Charts</a></li>
+                        <li class="nav-item li-spaced"><a class="nav-link" href="/all_time_top_tracks">All Time Top Tracks</a></li>
+                        <li class="nav-item li-spaced"><a class="nav-link" href="/all_time_top_artists">All Time Top Artists</a></li>
+                        <li class="nav-item li-spaced"><a class="nav-link" href="/all_time_top_albums">All Time Top Albums</a></li>
+
+                    </ul>
+                    <ul class="navbar-nav ml-auto mt-2">
+                        <!--<li class="nav-item"><button type="button" id="darkmode" onClick="reply_click(this.id)" class="btn btn-outline-secondary">dark-mode</button></li>-->
+                        <li class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle altlink" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Settings</a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/account_settings">Your Account</a></li>
+                            <li><a class="dropdown-item" href="/about">About Radio-Friendly</a></li>
+                            <li><a class="dropdown-item" href="/feedback">Leave a Feedback</a></li>
+                          </ul>
+                          </li>
+
+
+                        <li class="nav-item"><a class="nav-link" href="#">Logged as {{ session["username"] }}</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/logout">Log Out</a></li>
+                    </ul>
+                {% else %}
+                    <ul class="navbar-nav ml-auto mt-2">
+                        <li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/login">Log In</a></li>
+                    </ul>
+                {% endif %}
+            </div>
+        </nav>
+
+        {% if get_flashed_messages() %}
+            <header>
+                <div id = "flashed" class="alert border-danger text-center flashed" role="alert">
+                    {{ get_flashed_messages() | join(" ") }}
+                </div>
+            </header>
+        {% endif %}
+
+        <main class="container p-5">
+            {% block main %}{% endblock %}
+        </main>
+
+        <footer class="small text-center text-muted">
+            <p>Data provided for free by <a href="https://www.last.fm/">Last.fm</a>. View <a href="https://www.last.fm/api">Last.fm’s API documentation</a>.</p>
+        </footer><br>
+
+    </body>
+
+</html>

@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Search
+{% endblock %}
+
+{% block main %}
+   <br><br><form action="/" method="post">
+        <div class="form-group">
+            <h2>Enter a Last.fm Username</h2><br>
+            <input autocomplete="on" placeholder="Enter a Last.fm username" value="{{ session['userlastfmusername'] }}" class="form-control" autofocus name="lastfmusername" type="text">
+
+        </div>
+        <br><h4>Select a Query to Run</h4><br>
+        <div class="form-group index">
+
+            <button type="submit" id="dark1" name="option" value="user_info" class="btn btn-dark">Username Info</button>
+            <button type="submit" id="dark2" name="option" value="recent_played_tracks" class="btn btn-dark">Recent Played Tracks</button>
+            <button type="submit" id="dark3" name="option" value="weekly_charts" class="btn btn-dark">Weekly Charts</button><br><br>
+            <button type="submit" id="dark4" name="option" value="all_time_top_tracks" class="btn btn-dark">All Time Top Tracks</button>
+            <button type="submit" id="dark5" name="option" value="all_time_top_artists" class="btn btn-dark">All Time Top Artists</button>
+            <button type="submit" id="dark6" name="option" value="all_time_top_albums" class="btn btn-dark">All Time Top Albums</button>
+        </div>
+        <!--<button class="btn btn-dark" type="submit">Enter</button>-->
+
+    </form>
+{% endblock %}
+

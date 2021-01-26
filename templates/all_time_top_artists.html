@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    All Time Top Artists
+{% endblock %}
+
+{% block main %}
+
+    <br><h2>All Time Top Artists by</h2>
+    <div>
+        <img class="avatar" src="{{avatar}}">
+    </div>
+    <h2 class="forceredtext">{{ session["lastfmusername"] }}</h2><br>
+
+    <table class="table borderless table-striped">
+        <tr>
+            <thead class="theadhighlight">
+                <td></td>
+                <td>Artist</td>
+                <td>Scrobbles</td>
+            </thead>
+        </tr>
+
+            {% set p = namespace(value=1) %}
+            {% set n = namespace(value=0) %}
+            {% for i in range(50) %}
+        <tr>
+            <td>{{ p.value }}</td>
+            <td>{{ all_time_top_artists_name[n.value] }}</td>
+            <td>{{ all_time_top_artists_playcount[n.value] }} scrobbles</td>
+        </tr>
+                {% set p.value = p.value + 1 %}
+                {% set n.value = n.value + 1 %}
+            {% endfor %}
+
+    </table>
+
+{% endblock %}
